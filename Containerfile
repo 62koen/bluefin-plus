@@ -52,6 +52,7 @@ COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
+    mkdir -p /usr/lib/cups/filter && \
     mkdir -p /usr/src/xpad-0.5 && \
     ostree container commit
 
