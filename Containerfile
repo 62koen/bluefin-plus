@@ -62,7 +62,9 @@ COPY xpad /usr/src/xpad-0.5
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
     chown root:root /usr/lib/cups/filter/pstoricohddst-gdi && \
-    dkms install --force -m xpad -v 0.5 && \
+    ostree container commit
+
+RUN dkms install --force -m xpad -v 0.5 && \
     modprobe -r xpad && \
     modprobe xpad && \
     ostree container commit
