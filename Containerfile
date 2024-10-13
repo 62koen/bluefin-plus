@@ -55,7 +55,7 @@ RUN mkdir -p /var/lib/alternatives && \
     mkdir -p /usr/src/xpad-0.5 && \
     ostree container commit
 
-COPY pstoricohddst-gdi /usr/lib/cups/filter
+COPY pstoricohddst-gdi /usr/lib/cups/filter && \
      xpad /usr/src/xpad-0.5
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
