@@ -52,14 +52,17 @@ COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
+    mkdir -p /usr/src/xpad-0.5 && \
     ostree container commit
 
 COPY pstoricohddst-gdi /usr/lib/cups/filter
+     xpad /usr/src/xpad-0.5
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
     chown root:root /usr/lib/cups/filter/pstoricohddst-gdi && \
-    akmods && \
-    systemctl restart vboxdrv && \
+    dkms install --force -m xpad -v 0.5 && \
+    modprobe -r xpad && \
+    modprobe xpad && \
     ostree container commit
 
 ## NOTES:
