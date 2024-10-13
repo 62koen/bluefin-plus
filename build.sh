@@ -21,11 +21,6 @@ rpm-ostree install ghostscript
 rpm-ostree install inotify-tools
 rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 rpm-ostree install android-tools
-dnf install -y \
-    akmod-VirtualBox-*.fc${RELEASE}.${ARCH}
-akmods --force --kernels "${KERNEL}" --kmod VirtualBox
-modinfo /usr/lib/modules/${KERNEL}/extra/VirtualBox/{vboxdrv,vboxnetadp,vboxnetflt}.ko.xz > /dev/null \
-|| (find /var/cache/akmods/VirtualBox/ -name \*.log -print -exec cat {} \; && exit 1)
 
 # this would install a package from rpmfusion
 rpm-ostree install VirtualBox

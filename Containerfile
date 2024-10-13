@@ -49,9 +49,11 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+COPY build-kmod-VirtualBox.sh /tmp/build-kmod-VirtualBox.sh
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
+    /tmp/build-kmod-VirtualBox.sh && \
     mkdir -p /usr/lib/cups/filter && \
     ostree container commit
 
