@@ -14,6 +14,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 rpm-ostree install dkms
+rpm-ostree install linux-headers-6.8.0-1015-azure
 rpm-ostree install jbigkit
 rpm-ostree install ImageMagick
 rpm-ostree install ghostscript
