@@ -58,8 +58,6 @@ COPY pstoricohddst-gdi /usr/lib/cups/filter
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
     chown root:root /usr/lib/cups/filter/pstoricohddst-gdi && \
-    akmods && \
-    systemctl restart vboxdrv && \
     ostree container commit
 
 ## NOTES:

@@ -19,7 +19,7 @@ rpm-ostree install ghostscript
 rpm-ostree install inotify-tools
 
 # this would install a package from rpmfusion
-rpm-ostree install VirtualBox
+# rpm-ostree install VirtualBox
 
 #### Example for enabling a System Unit File
 
