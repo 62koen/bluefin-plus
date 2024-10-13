@@ -2,8 +2,6 @@
 
 set -ouex pipefail
 
-ARCH="$(rpm -E '%_arch')"
-KERNEL="$(rpm -q "${KERNEL_NAME}" --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}')"
 RELEASE="$(rpm -E %fedora)"
 
 
@@ -23,7 +21,7 @@ rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rele
 rpm-ostree install android-tools
 
 # this would install a package from rpmfusion
-rpm-ostree install VirtualBox
+# rpm-ostree install VirtualBox
 
 #### Example for enabling a System Unit File
 
