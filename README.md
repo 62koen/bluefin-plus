@@ -1,4 +1,14 @@
-# image-template
+# Bluefin Plus (from *image-template*)
+
+It's Bluefin-DX with a few tweaks to:
+- make my printer (Ricoh SP 112) working, thanks to [**this driver**](https://github.com/revisitor/ricoh-sp100)
+- have android-tools installed
+
+**I obviously do not recommend anyone to use it for production, it's just my little project :p**
+
+---
+
+# Universal Blue image-template
 
 # Purpose
 
