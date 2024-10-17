@@ -19,6 +19,9 @@ rpm-ostree install ghostscript
 rpm-ostree install inotify-tools
 rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 rpm-ostree install android-tools
+rpm-ostree install gnome-shell-extension-forge
+# rpm-ostree install gnome-shell-extension-
+rpm-ostree install gnome-shell-extension-just-perfection
 
 # this would install a package from rpmfusion
 # rpm-ostree install VirtualBox
