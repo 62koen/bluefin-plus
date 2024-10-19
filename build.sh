@@ -22,6 +22,8 @@ rpm-ostree install android-tools
 rpm-ostree install gnome-shell-extension-forge
 # rpm-ostree install gnome-shell-extension-
 rpm-ostree install gnome-shell-extension-just-perfection
+rpm-ostree install mangohud
+rpm-ostree install morewaita-icon-theme
 
 # this would install a package from rpmfusion
 # rpm-ostree install VirtualBox
