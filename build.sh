@@ -28,9 +28,6 @@ ghostscript \
 inotify-tools \
 android-tools \
 codium \
-kernel-devel-matched \
-kernel-core \
-dkms \
 mangohud
 
 # extensions
@@ -40,12 +37,6 @@ gnome-shell-extension-just-perfection
 
 # MoreWaita icon theme
 git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita
-
-# xpad kernel driver
-# git clone https://github.com/capure/xpad.git /usr/src/xpad-0.5
-# dkms install --force -m xpad -v 0.5
-# modprobe -r xpad
-# modprobe xpad
 
 #### Example for enabling a System Unit File
 
