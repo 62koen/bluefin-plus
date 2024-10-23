@@ -18,7 +18,6 @@ rpm-ostree override remove \
 # machine-id fix
 touch /etc/machine-id
 dbus-uuidgen >> /etc/machine-id
-service dbus restart
 
 # repos
 rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
