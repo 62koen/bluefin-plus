@@ -4,29 +4,26 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
+# repos
+sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
+rpm-ostree install \
+https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-### Install packages
+# programs
+rpm-ostree install \
+jbigkit \
+ImageMagick \
+ghostscript \
+inotify-tools \
+android-tools \
+codium \
+mangohud
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
-
-# this installs a package from fedora repos
-rpm-ostree install jbigkit
-rpm-ostree install ImageMagick
-rpm-ostree install ghostscript
-rpm-ostree install inotify-tools
-rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-rpm-ostree install android-tools
-rpm-ostree install gnome-shell-extension-forge
-# rpm-ostree install gnome-shell-extension-
-rpm-ostree install gnome-shell-extension-just-perfection
-rpm-ostree install mangohud
-rpm-ostree install morewaita-icon-theme
-
-# this would install a package from rpmfusion
-# rpm-ostree install VirtualBox
+# extensions
+rpm-ostree install \
+gnome-shell-extension-forge \
+gnome-shell-extension-just-perfection \
 
 #### Example for enabling a System Unit File
 

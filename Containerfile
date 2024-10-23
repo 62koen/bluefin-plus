@@ -49,14 +49,15 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
-COPY dusansimic-themes.repo /etc/yum.repos.d/
 
 RUN mkdir -p /var/lib/alternatives && \
+    mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
     mkdir -p /usr/lib/cups/filter && \
     ostree container commit
 
 COPY pstoricohddst-gdi /usr/lib/cups/filter/pstoricohddst-gdi
+     MoreWaita/ /usr/share/icons/MoreWaita
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
     chown root:root /usr/lib/cups/filter/pstoricohddst-gdi && \
