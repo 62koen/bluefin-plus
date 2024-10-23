@@ -53,7 +53,7 @@ COPY build.sh /tmp/build.sh
 RUN mkdir -p /var/lib/alternatives && \
     # mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
-    /tmp/MoreWaita/install.sh && \
+    # /tmp/MoreWaita/install.sh && \
     mkdir -p /usr/lib/cups/filter && \
     ostree container commit
 

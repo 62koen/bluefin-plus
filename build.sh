@@ -42,33 +42,32 @@ rpm-ostree install \
 gnome-shell-extension-forge \
 gnome-shell-extension-drive-menu \
 gnome-shell-extension-just-perfection
-gnome-shell-extension-installer \
 # Bedtime Mode
-4012 \
+gnome-shell-extension-installer 4012
 # Bing Wallpaper
-1262 \
+gnome-shell-extension-installer 1262
 # Bluetooth battery indicator
-3991 \
+gnome-shell-extension-installer 3991
 # Clipboard History
-4839 \
+gnome-shell-extension-installer 4839
 # DualShock/DualSense battery percentage
-1283 \
+gnome-shell-extension-installer 1283
 # Extension List
-3088 \
+gnome-shell-extension-installer 3088
 # OSD Volume Number
-5461 \
+gnome-shell-extension-installer 5461
 # Panel corners
-4805 \
+gnome-shell-extension-installer 4805
 # Quick Setting Tweaker
-5446 \
+gnome-shell-extension-installer 5446
 # Quick Settings Audio Devices Hider
-5964 \
+gnome-shell-extension-installer 5964
 # Rounded Corners
-1514 \
+gnome-shell-extension-installer 1514
 # Rounded Window Corners Reborn
-7048 \
+gnome-shell-extension-installer 7048
 # Windows Is Ready - Notification Remover
-1007
+gnome-shell-extension-installer 1007
 
 # MoreWaita icon theme
 git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita
