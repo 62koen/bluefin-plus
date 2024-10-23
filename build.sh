@@ -28,6 +28,8 @@ ghostscript \
 inotify-tools \
 android-tools \
 codium \
+kernel-devel-matched \
+kernel-core \
 dkms \
 mangohud
 
