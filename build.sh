@@ -74,8 +74,12 @@ gnome-shell-extension-installer 7048
 # Windows Is Ready - Notification Remover
 gnome-shell-extension-installer 1007
 
-# MoreWaita icon theme
+# git clones
 git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita
+git clone https://github.com/revisitor/ricoh-sp100.git /tmp/ricoh
+
+# printer drivers
+cp /tmp/ricoh/pstoricohddst-gdi /usr/lib/cups/filter
 
 #### Example for enabling a System Unit File
 

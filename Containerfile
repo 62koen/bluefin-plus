@@ -51,15 +51,13 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
-    mkdir /root/.cache
-    mkdir /root/.cache/dconf && \
     # mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
     # /tmp/MoreWaita/install.sh && \
     mkdir -p /usr/lib/cups/filter && \
     ostree container commit
 
-COPY pstoricohddst-gdi /usr/lib/cups/filter/pstoricohddst-gdi
+# COPY pstoricohddst-gdi /usr/lib/cups/filter/pstoricohddst-gdi
 # COPY MoreWaita/ /usr/share/icons/MoreWaita
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
