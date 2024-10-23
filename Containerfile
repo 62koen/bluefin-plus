@@ -56,7 +56,7 @@ RUN mkdir -p /var/lib/alternatives && \
     mkdir -p /usr/lib/cups/filter && \
     ostree container commit
 
-COPY pstoricohddst-gdi /usr/lib/cups/filter/pstoricohddst-gdi
+COPY pstoricohddst-gdi /usr/lib/cups/filter/pstoricohddst-gdi && \
      MoreWaita/ /usr/share/icons/MoreWaita
 
 RUN chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
