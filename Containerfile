@@ -51,6 +51,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
+    mkdir -p /root/.cache/dconf && \
     # mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
     # /tmp/MoreWaita/install.sh && \
