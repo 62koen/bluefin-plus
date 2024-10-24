@@ -51,11 +51,8 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
-    # mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
     ostree container commit
-
-# COPY MoreWaita/ /usr/share/icons/MoreWaita
 
 ## NOTES:
 # - /var/lib/alternatives is required to prevent failure with some RPM installs
