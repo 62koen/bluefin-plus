@@ -49,7 +49,6 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
-# COPY MoreWaita/ /usr/share/icons/MoreWaita
 
 RUN mkdir -p /var/lib/alternatives && \
     # mkdir -p /usr/share/icons/MoreWaita && \
@@ -58,6 +57,8 @@ RUN mkdir -p /var/lib/alternatives && \
     chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
     chown root:root /usr/lib/cups/filter/pstoricohddst-gdi && \
     ostree container commit
+
+# COPY MoreWaita/ /usr/share/icons/MoreWaita
 
 ## NOTES:
 # - /var/lib/alternatives is required to prevent failure with some RPM installs
