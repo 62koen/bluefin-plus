@@ -53,9 +53,6 @@ COPY build.sh /tmp/build.sh
 RUN mkdir -p /var/lib/alternatives && \
     # mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
-    /tmp/MoreWaita/install.sh && \
-    chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
-    chown root:root /usr/lib/cups/filter/pstoricohddst-gdi && \
     ostree container commit
 
 # COPY MoreWaita/ /usr/share/icons/MoreWaita
