@@ -52,7 +52,7 @@ COPY build.sh /tmp/build.sh
 # COPY MoreWaita/ /usr/share/icons/MoreWaita
 
 RUN mkdir -p /var/lib/alternatives && \
-    mkdir -p /usr/share/icons/MoreWaita && \
+    # mkdir -p /usr/share/icons/MoreWaita && \
     /tmp/build.sh && \
     /tmp/MoreWaita/install.sh && \
     chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi && \
