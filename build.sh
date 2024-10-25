@@ -19,7 +19,8 @@ rpm-ostree override remove \
     gnome-shell-extension-places-menu \
     gnome-shell-extension-window-list \
     gnome-shell-extension-blur-my-shell \
-    gnome-shell-extension-background-logo
+    gnome-shell-extension-background-logo \
+    code
 
 # programs
 rpm-ostree install \
