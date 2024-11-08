@@ -30,7 +30,8 @@ ghostscript \
 inotify-tools \
 android-tools \
 codium \
-mangohud
+mangohud \
+goverlay
 
 # extensions
 rpm-ostree install \
