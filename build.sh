@@ -30,7 +30,6 @@ inotify-tools \
 android-tools \
 codium \
 mangohud \
-waydroid \
 goverlay
 
 # extensions
