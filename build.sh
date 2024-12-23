@@ -29,7 +29,8 @@ inotify-tools \
 android-tools \
 codium \
 mangohud \
-goverlay
+goverlay \
+java-latest-openjdk
 
 # extensions
 rpm-ostree install \
