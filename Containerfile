@@ -52,6 +52,7 @@ COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
+    /tmp/MoreWaita/install.sh && \
     ostree container commit
 
 ## NOTES:

@@ -46,12 +46,12 @@ cp /tmp/ricoh/pstoricohddst-gdi /usr/lib/cups/filter
 chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi
 chown root:root /usr/lib/cups/filter/pstoricohddst-gdi
 
-# MoreWaita
-mkdir -p /usr/share/icons/MoreWaita/
-shopt -s extglob
-cp -avu "/tmp/MoreWaita"/!(*.build|*.sh|*.py|*.md|.git|.github|.gitignore|_dev) /usr/share/icons/MoreWaita/
-shopt -u extglob
-find /usr/share/icons/MoreWaita/ -name '*.build' -type f -delete
+## MoreWaita
+# mkdir -p /usr/share/icons/MoreWaita/
+# shopt -s extglob
+# cp -avu "/tmp/MoreWaita"/!(*.build|*.sh|*.py|*.md|.git|.github|.gitignore|_dev) /usr/share/icons/MoreWaita/
+# shopt -u extglob
+# find /usr/share/icons/MoreWaita/ -name '*.build' -type f -delete
 
 #### Example for enabling a System Unit File
 
