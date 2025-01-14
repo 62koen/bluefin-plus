@@ -17,8 +17,7 @@ rpm-ostree override remove \
     gnome-shell-extension-launch-new-instance \
     gnome-shell-extension-places-menu \
     gnome-shell-extension-window-list \
-    gnome-shell-extension-blur-my-shell \
-    code
+    gnome-shell-extension-blur-my-shell
 
 # programs
 rpm-ostree install \
