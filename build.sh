@@ -20,6 +20,7 @@ ImageMagick \
 ghostscript \
 inotify-tools \
 mangohud \
+btrfs-assistant \
 goverlay
 
 # extensions
