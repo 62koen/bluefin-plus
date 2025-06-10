@@ -27,8 +27,7 @@ inotify-tools \
 mangohud \
 btrfs-assistant \
 java-latest-openjdk.x86_64 \
-goverlay \
-VirtualBox
+goverlay
 
 # extensions
 rpm-ostree install \
