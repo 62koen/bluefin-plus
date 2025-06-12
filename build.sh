@@ -6,41 +6,34 @@ RELEASE="$(rpm -E %fedora)"
 
 # removes
 rpm-ostree override remove \
-    gnome-classic-session \
-    gnome-shell-extension-apps-menu \
-    gnome-shell-extension-launch-new-instance \
-    gnome-shell-extension-places-menu \
-    gnome-shell-extension-window-list \
-    gnome-shell-extension-blur-my-shell
+gnome-classic-session \
+gnome-shell-extension-apps-menu \
+gnome-shell-extension-launch-new-instance \
+gnome-shell-extension-places-menu \
+gnome-shell-extension-window-list \
+gnome-shell-extension-blur-my-shell
 
 # repos
 rpm-ostree install \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# programs
+# installs
 rpm-ostree install \
-## printer
 jbigkit \
 ImageMagick \
 ghostscript \
 inotify-tools \
-## gaming
 mangohud \
 goverlay \
-## VMs
 virt-install \
 libvirt-daemon-config-network \
 libvirt-daemon-kvm \
 qemu-kvm \
 virt-manager \
 virt-viewer \
-## everything else
 btrfs-assistant \
-java-latest-openjdk.x86_64
-
-# extensions
-rpm-ostree install \
+java-latest-openjdk.x86_64 \
 gnome-shell-extension-forge \
 gnome-shell-extension-drive-menu \
 gnome-shell-extension-just-perfection
