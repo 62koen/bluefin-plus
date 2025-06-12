@@ -20,15 +20,24 @@ https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E 
 
 # programs
 rpm-ostree install \
+## printer
 jbigkit \
 ImageMagick \
 ghostscript \
 inotify-tools \
+## gaming
 mangohud \
+goverlay \
+## VMs
+virt-install \
+libvirt-daemon-config-network \
+libvirt-daemon-kvm \
+qemu-kvm \
+virt-manager \
+virt-viewer \
+## everything else
 btrfs-assistant \
-java-latest-openjdk.x86_64 \
-@virtualization \
-goverlay
+java-latest-openjdk.x86_64
 
 # extensions
 rpm-ostree install \
