@@ -25,7 +25,6 @@ ImageMagick \
 ghostscript \
 inotify-tools \
 mangohud \
-goverlay \
 virt-install \
 libvirt-daemon-config-network \
 libvirt-daemon-kvm \
@@ -33,6 +32,7 @@ qemu-kvm \
 virt-manager \
 virt-viewer \
 btrfs-assistant \
+baobab \
 java-latest-openjdk.x86_64 \
 gnome-shell-extension-forge \
 gnome-shell-extension-drive-menu \
