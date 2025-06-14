@@ -1,10 +1,6 @@
 # Bluefin Plus (from *image-template*)
 
-It's Bluefin with a few tweaks to:
-- make my printer (Ricoh SP 112) working, thanks to [**this driver**](https://github.com/revisitor/ricoh-sp100)
-- have android-tools installed without layering
-
-**I obviously do not recommend anyone to use it for production, it's just my little project :p**
+It's my daily Bluefin image with various tweaks to have what require layering or what isn't possible on Fedora Atomic while having a rock solid base of it.
 
 ---
 
