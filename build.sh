@@ -33,7 +33,8 @@ virt-manager \
 virt-viewer \
 btrfs-assistant \
 baobab \
-java-latest-openjdk.x86_64 \
+gparted \
+java-21-openjdk.x86_64 \
 gnome-shell-extension-forge \
 gnome-shell-extension-drive-menu \
 gnome-shell-extension-just-perfection
