@@ -34,12 +34,11 @@ virt-viewer \
 btrfs-assistant \
 baobab \
 gparted \
+spice-gtk-tools \
 java-21-openjdk.x86_64 \
 gnome-shell-extension-forge \
 gnome-shell-extension-drive-menu \
 gnome-shell-extension-just-perfection
-
-rpm-ostree install bash coreutils curl edk2-tools genisoimage grep jq mesa-demos pciutils procps python3 qemu sed socat spice-gtk-tools swtpm unzip usbutils util-linux xdg-user-dirs xrandr zsync
 
 # git clones
 git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita
