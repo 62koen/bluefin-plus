@@ -43,6 +43,7 @@ gnome-shell-extension-just-perfection
 # git clones
 git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita
 git clone https://github.com/revisitor/ricoh-sp100.git /tmp/ricoh
+git clone https://github.com/capure/xpad.git /usr/src/xpad-0.5
 
 # printer drivers
 cp /tmp/ricoh/pstoricohddst-gdi /usr/lib/cups/filter
