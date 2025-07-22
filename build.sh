@@ -35,6 +35,7 @@ btrfs-assistant \
 baobab \
 gparted \
 spice-gtk-tools \
+dkms \
 java-21-openjdk.x86_64 \
 gnome-shell-extension-forge \
 gnome-shell-extension-drive-menu \
