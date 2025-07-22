@@ -33,6 +33,7 @@ virt-manager \
 virt-viewer \
 btrfs-assistant \
 baobab \
+gnome-software \
 gparted \
 spice-gtk-tools \
 dkms \
