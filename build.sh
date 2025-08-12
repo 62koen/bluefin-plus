@@ -35,6 +35,7 @@ btrfs-assistant \
 baobab \
 gnome-software \
 gparted \
+dkms \
 spice-gtk-tools \
 java-21-openjdk.x86_64 \
 gnome-shell-extension-forge \
@@ -44,17 +45,12 @@ gnome-shell-extension-just-perfection
 # git clones
 git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita
 git clone https://github.com/revisitor/ricoh-sp100.git /tmp/ricoh
-git clone https://github.com/berarma/new-lg4ff.git /tmp/logi
+git clone https://github.com/berarma/new-lg4ff.git /usr/src/new-lg4ff
 
 # printer drivers
 cp /tmp/ricoh/pstoricohddst-gdi /usr/lib/cups/filter
 chmod 0555 /usr/lib/cups/filter/pstoricohddst-gdi
 chown root:root /usr/lib/cups/filter/pstoricohddst-gdi
-
-# racing wheel drivers
-make /tmp/logi
-make install /tmp/logi
-make load /tmp/logi
 
 #### Example for enabling a System Unit File
 
