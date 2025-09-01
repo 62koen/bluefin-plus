@@ -17,8 +17,7 @@ gnome-shell-extension-blur-my-shell
 rpm-ostree install \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo curl --output-dir "/etc/yum.repos.d/" --remote-name https://copr.fedorainfracloud.org/coprs/herzen/davinci-helper/repo/fedora-42/herzen-davinci-helper-fedora-42.repo
-sudo rpm-ostree refresh-md --force
+curl --output-dir "/etc/yum.repos.d/" --remote-name https://copr.fedorainfracloud.org/coprs/herzen/davinci-helper/repo/fedora-42/herzen-davinci-helper-fedora-42.repo
 
 # installs
 rpm-ostree install \
